@@ -3,7 +3,9 @@
 #Convert the extracted value to a floating point number and print it out.
 
 text = "X-DSPAM-Confidence:    0.8475";
-a = text.find('.')
-b = text[a-1:a+5]
+a = text.find(':')
+#print(a)
+b = text[a+1:]
+#print(b)
 c = float(b)
 print(c)
